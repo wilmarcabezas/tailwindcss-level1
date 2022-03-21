@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+
+.form-control{
+    @apply w-full py-1 px-4 rounded border border-blue-300 bg-gray-300 text-gray-800 placeholder-secondary leading-snug;
+}
+
+.form-control:hover{
+    @apply hover:bg-white;
+}
+
+.form-control:focus{
+    @apply outline-none ring;
+}
+
+.btn{
+    @apply block px-4 py-2 rounded shadow-xl bg-gray-500;
+}
+
+.btn-primary
+{
+    @apply bg-yellow-600;
+}
+
+.btn:hover{
+    @apply shadow-none bg-gray-700 text-white
+}
+
+@tailwind utilities;
+
+@responsive {
+    .rotate-45 {
+        transform: rotate(45deg);
+    }
+}
+
+@variants hover: {
+    .zoom {
+        transform: scale(2);
+    }
+}
+
+/*
+
+.btn-blue {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.btn-red {
+    @apply bg-red-800 text-white font-bold py-2 px-4 rounded;
+}
+.btn-red:hover {
+    @apply bg-red-900;
+}
+
+.alert {
+    @apply bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 m-32;
+}
+.alert-warning {
+    @apply bg-yellow-100 text-yellow-700 border-yellow-500;
+}
+.alert-info {
+    @apply bg-indigo-100 text-indigo-700 border-indigo-500;
+}
+.alert-danger {
+    @apply bg-red-100 text-red-700 border-red-500;
+}
+.alert-success {
+    @apply bg-green-100 text-green-700 border-green-500;
+}
+*/
